@@ -1,0 +1,8 @@
+.btn-gradient {
+  background-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.3) 0%,
+    #f96614 100%
+  );
+  background-color: #f68749;
+}

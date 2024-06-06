@@ -3,6 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -13,7 +26,7 @@
           },
           extend: {
             colors: {
-              clifford: "#da373d",
+              primary: "#F96614",
             },
           },
         },
@@ -21,9 +34,112 @@
     </script>
   </head>
   <body>
-    <div class="h-[900px] bg-yellow-400">
-      <div class="container">
-        <h1 class="text-3xl font-bold underline">Hello world!</h1>
+    <div
+      class="bg-[url('public/img/live_stream_section_bg.png')] bg-center bg-cover"
+    >
+      <div class="container grid md:grid-cols-2 gap-5 h-full">
+        <div class="max-w-[660px] mx-auto mt-[135px] mb-[90px] p-[10px]">
+          <div class="space-y-2">
+            <p
+              class="uppercase text-primary font-semibold leading-5 tracking-[4px] font-['outfit']"
+            >
+              NEW LAUNCH
+            </p>
+
+            <h3 class="font-['Catamaran'] text-[50px] font-bold leading-[60px]">
+              Live Streaming OTT
+              <span class="block text-primary"> Platforms </span>
+            </h3>
+            <p class="font-medium leading-[26px] font-['Catamaran']">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries,
+            </p>
+          </div>
+
+          <!-- Select Package -->
+          <div
+            class="text-center flex items-center gap-5 mt-6 font-[Catamaran]"
+          >
+            <div
+              class="px-8 py-4 w-fit rounded-lg btn-gradient text-white font-medium relative cursor-pointer"
+            >
+              80 Channels
+              <img
+                src="/public/img/arrow_down.png"
+                class="absolute -bottom-[9px] left-0 right-0 m-auto -z-0"
+              />
+            </div>
+
+            <div
+              class="px-8 py-4 w-fit rounded-lg bg-white font-medium cursor-pointer"
+            >
+              120 Channels
+            </div>
+
+            <div
+              class="px-8 py-4 w-fit rounded-lg bg-white font-medium cursor-pointer"
+            >
+              240 Channels
+            </div>
+          </div>
+
+          <!-- Package Details -->
+          <div class="mt-10 flex items-center gap-10">
+            <div class="w-fit bg-white rounded-xl p-6 flex gap-1">
+              <p class="font-bold text-2xl font-[Catamaran]">$</p>
+              <p
+                class="text-[100px] font-medium font-[Outfit] leading-[100px] text-primary"
+              >
+                29
+              </p>
+              <p class="font-[Catamaran] text-xl leading-5 font-bold mt-[73px]">
+                /Month
+              </p>
+            </div>
+
+            <div>
+              <ul class="space-y-2 font-[Catamaran] font-medium leading-7">
+                <li class="flex items-center gap-2">
+                  <img
+                    src="/public/img/tick.png"
+                    class="flex-shrink-0 w-5 h-5 object-cover"
+                  />
+                  <p>Lorem Ipsum Test Data</p>
+                </li>
+
+                <li class="flex items-center gap-2">
+                  <img
+                    src="/public/img/tick.png"
+                    class="flex-shrink-0 w-5 h-5 object-cover"
+                  />
+                  <p>Lorem Ipsum Test Data</p>
+                </li>
+
+                <li class="flex items-center gap-2">
+                  <img
+                    src="/public/img/tick.png"
+                    class="flex-shrink-0 w-5 h-5 object-cover"
+                  />
+                  <p>Lorem Ipsum Test Data</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- OTT logos -->
+          <div class="flex gap-3 mt-10">
+            <img src="/public/img/amazon_prime.png" class="w-24 rounded-lg" />
+            <img src="/public/img/netflix.png" class="w-24 rounded-lg" />
+            <img src="/public/img/youtube.png" class="w-24 rounded-lg" />
+            <img src="/public/img/disney.png" class="w-24 rounded-lg" />
+          </div>
+        </div>
+        <div class="mt-auto">
+          <img src="/public/img/live_stream.png" class="w-full" />
+        </div>
       </div>
     </div>
   </body>
