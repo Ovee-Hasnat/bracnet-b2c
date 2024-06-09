@@ -6,3 +6,52 @@
   );
   background-color: #f68749;
 }
+
+.video-section-gradient {
+  background: linear-gradient(90deg, rgba(27, 22, 73, 0.3) 0%, #1b1649 100%);
+}
+
+/* Style the modal */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto; /* 5% from the top and centered */
+  padding: 12px;
+  border: 2px solid #f96614;
+  border-radius: 18px;
+  width: fit-content; /* Could be more or less, depending on screen size */
+}
+
+/* Close Button */
+.close {
+  color: #aaa;
+  display: block;
+  margin-top: -12px;
+  margin-left: auto;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 24px;
+  width: fit-content;
+  transition: all 0.2s;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  scale: 1.2;
+}
