@@ -35,7 +35,7 @@
           },
           extend: {
             colors: {
-              primary: "#F96614",
+              primary: "#F37F20",
             },
           },
         },
@@ -163,47 +163,75 @@
         </p>
 
         <!-- Questions -->
-        <div class="text-left mt-20 space-y-6">
-          <div id="faq-1" class="p-4 md:p-8 rounded-xl shadow">
-            <div class="flex items-start justify-between gap-4">
-              <h3 class="text-lg md:text-xl font-bold text-primary">
+        <div
+          class="text-left mt-20 space-y-6 transition-all ease-linear duration-300"
+        >
+          <div
+            class="p-4 md:p-8 rounded-xl shadow hover:shadow-md cursor-pointer"
+            onclick="handle_faq(1)"
+          >
+            <div class="flex items-center justify-between gap-4">
+              <h3 id="faq-1-q" class="text-lg md:text-xl font-bold">
                 How long does it take to get my internet connection installed
                 after I sign up?
               </h3>
-              <img src="/public/icons/accordion_up.svg" />
+              <img id="icon-1" src="/public/icons/accordion_down.svg" />
             </div>
-            <p id="faq-1-ans" class="mt-5 font-medium leading-6">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s
+            <p id="faq-1" class="mt-5 font-medium leading-6 hidden">
+              After you sign up for our internet service, installation usually
+              takes between 3 to 5 business days. Our team will contact you to
+              schedule an installation appointment at your convenience.
             </p>
           </div>
 
           <div
-            class="flex items-center justify-between gap-4 p-4 md:p-8 rounded-xl shadow"
+            class="p-4 md:p-8 rounded-xl shadow hover:shadow-md cursor-pointer"
+            onclick="handle_faq(2)"
           >
-            <h3 class="text-lg md:text-xl font-bold">
-              What Is The Difference Between 4G And 5G Technology?
-            </h3>
-            <img src="/public/icons/accordion_down.svg" />
+            <div class="flex items-center justify-between gap-4">
+              <h3 id="faq-2-q" class="text-lg md:text-xl font-bold">
+                Can I temporarily suspend my internet service when I'm not using
+                it?
+              </h3>
+              <img id="icon-2" src="/public/icons/accordion_down.svg" />
+            </div>
+            <p id="faq-2" class="mt-5 font-medium leading-6 hidden">
+              Yes, you can request a temporary suspension of your internet
+              service if you won’t be using it for an extended period, such as
+              when going on vacation.
+            </p>
           </div>
 
           <div
-            class="flex items-center justify-between gap-4 p-4 md:p-8 rounded-xl shadow"
+            class="p-4 md:p-8 rounded-xl shadow hover:shadow-md cursor-pointer"
+            onclick="handle_faq(3)"
           >
-            <h3 class="text-lg md:text-xl font-bold">
-              What Kind Of Payment Do You Have?
-            </h3>
-            <img src="/public/icons/accordion_down.svg" />
+            <div class="flex items-center justify-between gap-4">
+              <h3 id="faq-3-q" class="text-lg md:text-xl font-bold">
+                Can I upgrade or downgrade my internet plan?
+              </h3>
+              <img id="icon-3" src="/public/icons/accordion_down.svg" />
+            </div>
+            <p id="faq-3" class="mt-5 font-medium leading-6 hidden">
+              Yes, you can upgrade or downgrade your internet plan at any time.
+            </p>
           </div>
 
           <div
-            class="flex items-center justify-between gap-4 p-4 md:p-8 rounded-xl shadow"
+            class="p-4 md:p-8 rounded-xl shadow hover:shadow-md cursor-pointer"
+            onclick="handle_faq(4)"
           >
-            <h3 class="text-lg md:text-xl font-bold">
-              Which Type Of Connection Works Best For Wifi?
-            </h3>
-            <img src="/public/icons/accordion_down.svg" />
+            <div class="flex items-center justify-between gap-4">
+              <h3 id="faq-4-q" class="text-lg md:text-xl font-bold">
+                What equipment do I need for your internet service, and is it
+                provided by the company?
+              </h3>
+              <img id="icon-4" src="/public/icons/accordion_down.svg" />
+            </div>
+            <p id="faq-4" class="mt-5 font-medium leading-6 hidden">
+              For our internet service, you will need a modem and a router. We
+              provide the necessary equipment during the installation process.
+            </p>
           </div>
 
           <div class="bg-gradient-to-r to-[#F68749] from-primary rounded-xl">
@@ -316,4 +344,21 @@
     </section>
     <!-- Best Network Section END -->
   </body>
+
+  <script>
+    function handle_faq(id) {
+      const el = document.getElementById(`faq-${id}`);
+      const ques = document.getElementById(`faq-${id}-q`);
+      const icon = document.getElementById(`icon-${id}`);
+      if (el.offsetHeight === 0) {
+        el.style.display = "block";
+        ques.style.color = "#F37F20";
+        icon.style.transform = "rotate(270deg)";
+      } else {
+        el.style.display = "none";
+        ques.style.color = "#000";
+        icon.style.transform = "rotate(0)";
+      }
+    }
+  </script>
 </html>
