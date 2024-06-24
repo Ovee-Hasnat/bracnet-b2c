@@ -346,6 +346,20 @@
   </body>
 
   <script>
+    function closeOther(id) {
+      for (let i = 1; i < 5; i++) {
+        if (i != id) {
+          const el = document.getElementById(`faq-${i}`);
+          const ques = document.getElementById(`faq-${i}-q`);
+          const icon = document.getElementById(`icon-${i}`);
+
+          el.style.display = "none";
+          ques.style.color = "#000";
+          icon.style.transform = "rotate(0)";
+        }
+      }
+    }
+
     function handle_faq(id) {
       const el = document.getElementById(`faq-${id}`);
       const ques = document.getElementById(`faq-${id}-q`);
@@ -354,6 +368,8 @@
         el.style.display = "block";
         ques.style.color = "#F37F20";
         icon.style.transform = "rotate(270deg)";
+
+        closeOther(id);
       } else {
         el.style.display = "none";
         ques.style.color = "#000";
