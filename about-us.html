@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            center: true,
+            padding: "1rem",
+          },
+          extend: {
+            colors: {
+              primary: "#F96614",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- Reason for choosing us -->
+    <section
+      class="bg-[url('public/img/about_us_bg.png')] bg-center bg-cover py-[80px] lg:py-[150px]"
+    >
+      <div
+        class="container grid grid-cols-1 lg:grid-cols-2 gap-8 2xl:gap-[100px] h-full overflow-hidden"
+      >
+        <!-- Image -->
+        <div class="flex gap-3 md:gap-6">
+          <div class="w-[450px] mt-20 relative">
+            <img
+              src="/public/img/img_rfc1.png"
+              class="rounded-lg lg:rounded-2xl"
+            />
+
+            <div
+              class="absolute z-10 top-24 -right-20 w-[100px] h-[100px] md:w-[160px] md:h-[160px] bg-white rounded-full flex items-center justify-center overflow-hidden"
+            >
+              <img src="/public/img/bracnet_logo.jpeg" />
+            </div>
+          </div>
+
+          <div class="w-[290px] h-fit">
+            <img
+              src="/public/img/img_rfc2.png"
+              class="rounded-lg lg:rounded-2xl"
+            />
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="font-['Catamaran']">
+          <h3
+            class="text-primary text-xs md:text-sm font-['Outfit'] tracking-[4px] font-semibold"
+          >
+            REASON FOR CHOOSING US
+          </h3>
+
+          <h1 class="text-3xl md:text-[50px] font-bold md:leading-[60px] mt-5">
+            We Provide The Best Network Services For You
+            <span class="text-primary"> And Your Family </span>
+          </h1>
+
+          <p class="mt-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+            nulla incidunt, nesciunt quaerat eligendi facere reiciendis sequi
+            ipsa ratione impedit dolor ex soluta molestiae maiores veniam fugit
+            voluptatum in rerum.
+          </p>
+
+          <div class="mt-12 space-y-5 2xl:space-y-7">
+            <div>
+              <h5 class="font-bold text-lg md:text-xl">Network Speed</h5>
+              <div class="h-3 bg-primary/40 rounded-full">
+                <div class="h-full w-[80%] bg-primary relative rounded-full">
+                  <span
+                    class="absolute text-lg md:text-xl font-bold -top-7 right-0"
+                    >80%</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h5 class="font-bold text-lg md:text-xl">Security</h5>
+              <div class="h-3 bg-primary/40 rounded-full">
+                <div class="h-full w-[80%] bg-primary relative rounded-full">
+                  <span
+                    class="absolute text-lg md:text-xl font-bold -top-7 right-0"
+                    >80%</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h5 class="font-bold text-lg md:text-xl">Trustworthy</h5>
+              <div class="h-3 bg-primary/40 rounded-full">
+                <div class="h-full w-[80%] bg-primary relative rounded-full">
+                  <span
+                    class="absolute text-lg md:text-xl font-bold -top-7 right-0"
+                    >80%</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA -->
+          <button
+            class="mt-16 2xl:mt-20 px-8 py-2 text-base w-fit rounded-lg btn-gradient text-white font-medium relative cursor-pointer"
+          >
+            Discover More
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Reason for choosing us END -->
+
+    <!-- FAQ Section -->
+    <section class="bg-white py-[80px] lg:py-[116px] font-['Catamaran']">
+      <div class="max-w-[1000px] mx-auto text-center px-4">
+        <h3
+          class="text-primary text-xs md:text-sm font-['Outfit'] tracking-[4px] font-semibold"
+        >
+          OUR EXPERTS ANSWER
+        </h3>
+
+        <h1 class="text-3xl md:text-[50px] font-bold md:leading-[60px] mt-5">
+          Frequently Asked
+          <span class="text-primary">Questions</span>
+        </h1>
+
+        <p class="mt-3 max-w-2xl mx-auto">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nulla
+          incidunt, nesciunt quaerat eligendi facere reiciendis sequi ipsa
+          ratione impedit dolor ex soluta molestiae maiores veniam.
+        </p>
+
+        <!-- Questions -->
+        <div class="text-left mt-20 space-y-6">
+          <div id="faq-1" class="p-4 md:p-8 rounded-xl shadow">
+            <div class="flex items-start justify-between gap-4">
+              <h3 class="text-lg md:text-xl font-bold text-primary">
+                How long does it take to get my internet connection installed
+                after I sign up?
+              </h3>
+              <img src="/public/icons/accordion_up.svg" />
+            </div>
+            <p id="faq-1-ans" class="mt-5 font-medium leading-6">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s
+            </p>
+          </div>
+
+          <div
+            class="flex items-center justify-between gap-4 p-4 md:p-8 rounded-xl shadow"
+          >
+            <h3 class="text-lg md:text-xl font-bold">
+              What Is The Difference Between 4G And 5G Technology?
+            </h3>
+            <img src="/public/icons/accordion_down.svg" />
+          </div>
+
+          <div
+            class="flex items-center justify-between gap-4 p-4 md:p-8 rounded-xl shadow"
+          >
+            <h3 class="text-lg md:text-xl font-bold">
+              What Kind Of Payment Do You Have?
+            </h3>
+            <img src="/public/icons/accordion_down.svg" />
+          </div>
+
+          <div
+            class="flex items-center justify-between gap-4 p-4 md:p-8 rounded-xl shadow"
+          >
+            <h3 class="text-lg md:text-xl font-bold">
+              Which Type Of Connection Works Best For Wifi?
+            </h3>
+            <img src="/public/icons/accordion_down.svg" />
+          </div>
+
+          <div class="bg-gradient-to-r to-[#F68749] from-primary rounded-xl">
+            <div
+              class="bg-[url('public/img/faq_bg.png')] flex items-center justify-between gap-4 p-4 md:p-8 rounded-xl shadow"
+            >
+              <h3 class="text-xl text-white font-bold">
+                Do You Have Any Queries?
+              </h3>
+              <button
+                class="px-6 py-1.5 font-medium rounded-2xl text-primary bg-white"
+              >
+                Get In Touch
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FAQ Section END -->
+
+    <!-- Best Network Section -->
+    <section class="bg-[#505050] py-[80px] lg:py-[120px] font-['Catamaran']">
+      <div class="text-center">
+        <h3
+          class="text-primary text-xs md:text-sm font-['Outfit'] tracking-[4px] font-semibold"
+        >
+          BEST NETWORK CONNECTIONS
+        </h3>
+
+        <h1
+          class="text-3xl md:text-[50px] font-bold md:leading-[60px] mt-5 text-white"
+        >
+          Better Connectivity From
+          <span class="text-primary">BracNet</span>
+        </h1>
+      </div>
+
+      <div
+        class="container mt-20 flex flex-col lg:flex-row justify-center items-center gap-5 md:gap-[100px]"
+      >
+        <img src="/public/img/map.png" class="w-full max-w-[450px] mx-auto" />
+        <p
+          class="lg:font-medium text-lg xl:text-[28px] xl:leading-[50px] text-neutral-200 max-w-3xl text-justify md:text-center"
+        >
+          Understanding the global phenomenon in Information Technology and the
+          underlying issues businesses face today, BRACNet invested in capacity
+          building to develop in-house resources on System Integration (SI),
+          Cloud Computing, Information Security, Managed Services & many more.
+          BRACNet believes that its power lies in their people and stresses the
+          core value- People, Innovation, Sustainability. Our management and
+          leadership are headed by industry experts, domain specialists, and
+          visionary leaders.
+        </p>
+      </div>
+
+      <div
+        class="container mt-16 md:mt-28 flex items-center justify-between flex-wrap gap-5"
+      >
+        <div class="text-white flex items-center gap-3">
+          <div
+            class="bg-[url('public/img/map_mask.png')] bg-center bg-cover w-28 h-28 rounded-full border border-primary flex items-center justify-center"
+          >
+            <span class="text-[60px] font-bold">75k</span>
+          </div>
+          <h4 class="font-bold leading-5">
+            SATISFIED <br />
+            CLIENTS
+          </h4>
+        </div>
+
+        <div class="text-white flex items-center gap-3">
+          <div
+            class="bg-[url('public/img/map_mask.png')] bg-center bg-cover w-28 h-28 rounded-full border border-primary flex items-center justify-center"
+          >
+            <span class="text-[60px] font-bold">50</span>
+          </div>
+          <h4 class="font-bold leading-5">
+            BRANCHES <br />
+            GLOBALLY
+          </h4>
+        </div>
+
+        <div class="text-white flex items-center gap-3">
+          <div
+            class="bg-[url('public/img/map_mask.png')] bg-center bg-cover w-28 h-28 rounded-full border border-primary flex items-center justify-center"
+          >
+            <span class="text-[60px] font-bold">32</span>
+          </div>
+          <h4 class="font-bold leading-5">
+            EXPERT
+            <br />
+            INSTRUCTORS
+          </h4>
+        </div>
+
+        <div class="text-white flex items-center gap-3">
+          <div
+            class="bg-[url('public/img/map_mask.png')] bg-center bg-cover w-28 h-28 rounded-full border border-primary flex items-center justify-center"
+          >
+            <span class="text-[60px] font-bold">7</span>
+          </div>
+          <h4 class="font-bold leading-5">
+            YEARS FIELD
+            <br />
+            EXPERIENCE
+          </h4>
+        </div>
+      </div>
+    </section>
+    <!-- Best Network Section END -->
+  </body>
+</html>
